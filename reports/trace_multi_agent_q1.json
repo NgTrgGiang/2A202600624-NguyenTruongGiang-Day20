@@ -1,0 +1,53 @@
+{
+  "run_name": "multi_agent_q1",
+  "query": "Research GraphRAG state-of-the-art and write a 500-word summary",
+  "route_history": [
+    "researcher",
+    "analyst",
+    "writer",
+    "critic",
+    "done"
+  ],
+  "iterations": 5,
+  "errors": [],
+  "trace": [
+    {
+      "name": "researcher",
+      "payload": {
+        "content_preview": "- GraphRAG (Graph Retrieval-Augmented Generation) is a novel approach that integrates graph-based retrieval mechanisms with generative models to enhance information retrieval and content generation ta",
+        "num_sources": 5,
+        "input_tokens": 438,
+        "output_tokens": 261,
+        "cost_usd": 0.000222
+      }
+    },
+    {
+      "name": "analyst",
+      "payload": {
+        "content_preview": "### Key Claims with Citations\n\n1. **Integration of Graph-Based Retrieval and Generative Models**: GraphRAG combines graph-based retrieval mechanisms with generative models to enhance information retri",
+        "input_tokens": 367,
+        "output_tokens": 535,
+        "cost_usd": 0.000376
+      }
+    },
+    {
+      "name": "writer",
+      "payload": {
+        "content_preview": "GraphRAG (Graph Retrieval-Augmented Generation) represents a cutting-edge approach that merges graph-based retrieval mechanisms with generative models, thereby enhancing tasks related to information r",
+        "input_tokens": 1067,
+        "output_tokens": 643,
+        "cost_usd": 0.000546
+      }
+    },
+    {
+      "name": "critic",
+      "payload": {
+        "content_preview": "- The answer provides a coherent overview of GraphRAG, but the claims made are not supported by verifiable sources, as all citations are from mock sources.\n- The mention of \"significantly boosts the a",
+        "citation_coverage": 1.0,
+        "input_tokens": 743,
+        "output_tokens": 166,
+        "cost_usd": 0.000211
+      }
+    }
+  ]
+}
